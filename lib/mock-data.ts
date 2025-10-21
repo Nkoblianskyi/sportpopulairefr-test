@@ -50,6 +50,7 @@ export const bettingSites: BettingSite[] = [
     stars: 4.7,
     reviews: 2365,
     badges: ["TENDANCE"],
+    isPopular: true,
     isTrending: true,
   },
   {
