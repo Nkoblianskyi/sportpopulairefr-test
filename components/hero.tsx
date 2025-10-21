@@ -18,7 +18,7 @@ export function Hero() {
 
   return (
     <>
-      <section className="relative w-full py-16 border-b border-white/10 overflow-hidden">
+      <section className="relative w-full py-8 border-b border-white/10 overflow-hidden">
         {/* Mobile background image */}
         <div
           className="absolute inset-0 z-0 md:hidden bg-cover bg-center"
@@ -47,12 +47,12 @@ export function Hero() {
             </div>
 
             {/* Main headline */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-6 leading-tight text-white text-shadow-strong">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 leading-tight text-white text-shadow-strong">
               Analyse Professionnelle des <span className="text-blue-300">Sites de Paris Sportifs</span> en France
             </h1>
 
             {/* Subtitle */}
-            <p className="text-lg md:text-xl text-center text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
+            <p className="text-sm md:text-lg text-center text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
               Comparaison objective et détaillée des plateformes licenciées ANJ. Guide expert pour parieurs avertis.
             </p>
 
@@ -63,7 +63,7 @@ export function Hero() {
                   
                   setShow18Modal(true)
                 }}
-                className="px-6 py-2 bg-red-600 text-white font-semibold rounded-md hover:bg-red-700 transition-colors text-sm uppercase tracking-wide"
+                className="px-4 py-2 bg-red-600 text-white font-semibold rounded-md hover:bg-red-700 transition-colors text-sm uppercase tracking-wide"
               >
                 18+ Information
               </button>
@@ -73,7 +73,7 @@ export function Hero() {
                   
                   setShowRulesModal(true)
                 }}
-                className="px-6 py-2 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-md hover:bg-white/20 transition-colors text-sm uppercase tracking-wide border border-white/20"
+                className="px-4 py-2 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-md hover:bg-white/20 transition-colors text-sm uppercase tracking-wide border border-white/20"
               >
                 Règles & Conditions
               </button>
@@ -86,7 +86,7 @@ export function Hero() {
       <Dialog
         open={show18Modal}
         onOpenChange={(open) => {
-          console.log("[v0] 18+ modal state changed to:", open)
+          console.log("18+ modal state changed to:", open)
           setShow18Modal(open)
         }}
       >
@@ -123,7 +123,7 @@ export function Hero() {
       <Dialog
         open={showRulesModal}
         onOpenChange={(open) => {
-          console.log("[v0] Rules modal state changed to:", open)
+          console.log("Rules modal state changed to:", open)
           setShowRulesModal(open)
         }}
       >
